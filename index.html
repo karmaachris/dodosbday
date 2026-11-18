@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> dodoo, this is yours</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Dancing+Script:wght@600&family=Satisfy&family=Pacifico&family=Shadows+Into+Light&family=Kalam&family=Sacramento&family=Great+Vibes&family=Homemade+Apple&family=Fraunces:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <audio id="bgm" loop preload="auto" src="6diaba.mp4"></audio>
+  <button id="muteBtn" class="mute" aria-label="Toggle music" hidden>♪</button>
+
+  <!-- 1. LOCK SCREEN -->
+  <section id="lock" class="screen" hidden>
+    <div class="lock-inner">
+      <p class="eyebrow">Not yet, Dodo 👀</p>
+      <h1 class="serif">Something is waiting for you</h1>
+      <div class="count" id="lockCount">
+        <div><b id="lDays">00</b><span>days</span></div>
+        <div><b id="lHours">00</b><span>hours</span></div>
+        <div><b id="lMins">00</b><span>min</span></div>
+        <div><b id="lSecs">00</b><span>sec</span></div>
+      </div>
+      <p class="muted">Come back on your birthday.</p>
+    </div>
+  </section>
+
+  <!-- 2. ENVELOPE INTRO -->
+  <section id="envelope" class="screen" hidden>
+    <p class="eyebrow">For MY dodoo</p>
+    <div class="env-wrap">
+      <div class="env" id="env">
+        <div class="env-back"></div>
+        <div class="polaroids" id="envPolaroids"></div>
+        <div class="env-front"></div>
+        <div class="env-flap"></div>
+        <div class="seal">♥</div>
+      </div>
+    </div>
+    <button id="openBtn" class="btn primary pulse">Open your invitation</button>
+  </section>
+
+  <!-- 3. THE SITE -->
+  <main id="site" hidden>
+    <div class="floaters" id="floaters" aria-hidden="true"></div>
+
+    <header class="hero">
+      <p class="eyebrow reveal">21 · 11 · 2026</p>
+      <h1 class="hero-title serif" id="heroTitle">Happy Birthday Dodooo</h1>
+      <p class="hero-sub reveal"> my person.</p>
+      <div class="scroll-hint reveal">scroll<span></span></div>
+    </header>
+
+    <section class="note reveal">
+      <p class="eyebrow">A little note</p>
+      <p class="note-text serif" id="noteText" aria-live="polite"></p>
+      <p class="signature" id="signature"></p>
+    </section>
+
+    <section class="gallery">
+      <!--<p class="eyebrow reveal">Us</p> -->
+      <h2 class="serif reveal">A few of my favorite moments</h2>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <!--
+    <section class="likes reveal">
+      <div class="chip">⚽ Football</div>
+      <div class="chip">🎾 Padel</div>
+      <div class="chip">🏖️ Beach</div>
+      <div class="chip">🍗 Ibn Elsham chicken</div>
+    </section>
+    -->
+
+    <section class="ask" id="ask">
+      <h2 class="serif reveal">So, Dodo...<br /> ready for another year of <br /> memories together?</h2>
+      <div class="arena reveal" id="arena">
+        <button class="btn primary" id="yesBtn">YESSS (as if you have another option yaanie)</button>
+        <button class="btn ghost" id="noBtn">Not interested</button>
+      </div>
+      <p class="toast" id="toast" aria-live="polite"></p>
+    </section>
+
+    <section class="details" id="details" hidden>
+      <p class="eyebrow">LETSGOOOOO.</p>
+      <h2 class="serif">Here's the plan</h2>
+      <div class="cards">
+        <div class="card"><span>When</span><b>Saturday, 21 November</b><i>Reservation at 8:00 PM</i></div>
+        <button class="card clickable" id="whereCard" type="button"><span>Where</span><b id="venue">It's a secret 🤫</b><i> tap here for more info</i></button>
+        <div class="card"><span>Dress code</span><b>A white t-shirt</b><i>The rest is on me😉</i></div>
+      </div>
+      <p class="muted">Dinner countdown</p>
+      <div class="count small" id="dinnerCount">
+        <div><b id="dDays">00</b><span>days</span></div>
+        <div><b id="dHours">00</b><span>hours</span></div>
+        <div><b id="dMins">00</b><span>min</span></div>
+        <div><b id="dSecs">00</b><span>sec</span></div>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <p class="muted">You made it to the bottom. Tap the blue heart.</p>
+      <button id="ball" class="ball" aria-label="Secret">💙</button>
+      <div class="guess" id="guessBox" hidden>
+        <p class="guess-q" id="guessQ"></p>
+        <form id="guessForm" autocomplete="off">
+          <input id="guessInput" type="text" placeholder="Type your guess..." maxlength="40" />
+          <button class="btn primary" type="submit">Guess</button>
+        </form>
+        <p class="guess-reply" id="guessReply" aria-live="polite"></p>
+      </div>
+      <p class="secret" id="secret"></p>
+    </footer>
+  </main>
+    <!-- PICKUP PAGE (opens when he taps "Where") -->
+  <section id="pickup" class="pickup" hidden aria-label="Pickup details">
+    <button class="back" id="pickupBack" type="button">← Back</button>
+    <div class="pickup-inner">
+      <div class="crown" aria-hidden="true">👑</div>
+      <p class="eyebrow">Plot twist</p>
+      <h2 class="serif">The place will remain a secret.<br />The pickup is not.</h2>
+      <p class="pickup-text" id="pickupText"></p>
+      <ul class="perks" id="perks"></ul>
+      <p class="muted perks-hint">Tap to accept the terms </p>
+      <button class="btn primary" id="pickupConfirm" type="button"> 3enaya ya mika ya maleka </button>
+      <p class="pickup-done" id="pickupDone"></p>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  <script src="birthday.js"></script>
+</body>
+</html>
