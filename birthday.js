@@ -43,7 +43,7 @@ const CONFIG = {
 note:
 `My Dodo,
 Here's to another year of you, and I'm still finding new reasons to love you. You make normal days feel so special, even a regular chicken dinner from Ibn Elsham turns into my favorite plan of the week because we're together.
-Football, padel, the beach, good food; you're so talented in so many ways, and I'm so lucky and grateful to share all of this with you!
+Football, padel, gym, good food; you're so talented in so many ways, and I'm so lucky and grateful to share all of this with you! (one day we'll share the our love to the beach together too)
 You're always my go-to person on my bad days, even before the good ones! Thank you for always bearing with my cries and mood swings, you know me so well, and I'm so blessed that you do. 
 I love you for that, and I love you for so many other things too.
 I hope this year gives you every little thing you wish for, and I hope I'm right next to you for all of it.
