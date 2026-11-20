@@ -69,12 +69,11 @@ Happy birthdayyy ya habebb albe❤️`,
 
   guess: {
     question: "I got you something. Any guesses?",
-    revealAfter: 3, // number of guesses before the secret message appears
+    revealAfter: 2, // number of guesses before the secret message appears
     replies: [
       "Interesting guess...",
-      "I'm not allowed to confirm or deny 🤐",
       "Hint: it's an old favorite of yours",],
-    last: "Okay okay, enough guessing!!!"
+    last: "enough guessing!!! gebtelak kol el hob bas ya dodo❤️"
   },
 
   // Hidden message (shows when he clicks the blue heart at the bottom)
